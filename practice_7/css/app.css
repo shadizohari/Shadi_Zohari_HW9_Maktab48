@@ -1,0 +1,7 @@
+.parent-table{
+    overflow-x: auto;
+}
+.page-link:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}
