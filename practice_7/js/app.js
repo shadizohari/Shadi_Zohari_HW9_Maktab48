@@ -80,15 +80,24 @@ $(function () {
         }
 
     }
-    const inputNumber = $('#number-rows');
-    start(Number(inputNumber.val()));
-    inputNumber.on("change", function () {
-        if (inputNumber.val() > 0) {
-            $('#numbers').empty();
-            start(Number(inputNumber.val()))
-        }
-    })
+    // const inputNumber = $('#number-rows');
+    // start(Number(inputNumber.val()));
+    // inputNumber.on("change", function () {
+    //     if (inputNumber.val() > 0) {
+    //         $('#numbers').empty();
+    //         start(Number(inputNumber.val()))
+    //     }
+    // })
 
+
+    const select = $("#number-rows")
+    const inputNumber = $("#number-rows option:selected")
+    start(Number(inputNumber.text()));
+    select.on("change", function () {
+        $('#numbers').empty();
+        start(Number(this.value))
+
+    })
 
 });
 

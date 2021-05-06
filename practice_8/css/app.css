@@ -1,0 +1,33 @@
+.parent{
+    width: 100px;
+    text-align: center;
+}
+.row{
+	flex-direction: column;
+    align-items: center;
+}
+.incremental-input {
+	display: flex;	
+	max-width: 8rem;
+}
+
+.incremental-input input[type=text] {
+	border-left: none;
+	border-right: none;
+	text-align: center;
+}
+
+.incremental-input .input-group-addon {
+	background: #fff;
+	cursor: pointer; 
+}
+button{
+	border:none;
+}
+button:focus{
+	outline: none;
+}
+input[type=text]:focus{
+	outline: none;
+	box-shadow: none;
+}
